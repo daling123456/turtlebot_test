@@ -1,0 +1,9 @@
+ <launch>
+   
+    <node pkg="demo11_test01_pkg" type="robot_tf_pub" name="publeader" args="tb3_0 virtual" />
+    <node pkg="demo11_test01_pkg" type="robot_tf_pub" name="pubfollower1" args="tb3_1 virtual1" />
+    <!-- <node pkg="demo11_test01_pkg" type="robot_tf_pub" name="pubfollower2" args="tb3_2 virtual2" /> -->
+    <node pkg="demo11_test01_pkg" type="robot_tf_sub" name="follower" args="virtual tb3_1" />
+    <!-- <node pkg="demo11_test01_pkg" type="robot_tf_sub" name="follower2" args="virtual1 tb3_2" /> -->
+  </launch>
+
